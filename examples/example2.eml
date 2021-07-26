@@ -1,0 +1,69 @@
+X-Spam-Checker-Version: SpamAssassin 3.4.3 (2019-12-06) on
+        mail.example.com
+X-Spam-Level: 
+X-Spam-Status: No, score=-145.2 required=5.0 tests=ALL_TRUSTED,MISSING_SUBJECT,
+        SPF_HELO_NONE autolearn=no autolearn_force=no version=3.4.3
+X-Spam-Relay-Country: 
+Lines: 41
+Return-Path: <example@example.com>
+X-Original-To: example@example.org
+Delivered-To: example@example.org
+Received: from mail2.example.org (mail2.example.org [166.84.1.73])
+        by mailbackend.example.org (Postfix) with ESMTP id 4GYLX95Zrsz2tbC
+        for <nan+comp-ai@example.org>; Mon, 26 Jul 2021 09:35:21 -0400 (EDT)
+Received: from foo1.example.org (foo1.example.org [166.84.1.1])
+        by mail2.example.org (Postfix) with ESMTP id 4GYLX95ZrGzwrG
+        for <nan+comp-ai@example.org>; Mon, 26 Jul 2021 09:35:21 -0400 (EDT)
+Received: by foo1.example.org (Postfix, from userid 20527)
+        id 4GYLX94dGRzcbc; Mon, 26 Jul 2021 09:35:21 -0400 (EDT)
+Date: Mon, 26 Jul 2021 09:35:21 -0400
+To: example@example.org
+User-Agent: Heirloom mailx 12.4 7/29/08
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <bar@example.com>
+From: example@example.com (Foo Bar Baz)
+X-Virus-Status: No
+
+This is a test message that contains a very long line to see how well s=
+uch messages are handled by STUMP on Bunix. This is a test message that=
+ contains a very long line to see how well such *messages* are handled =
+by STUMP on Bunix. This is a test message that contains a very long lin=
+e to see how well such messages are handled by STUMP on Bunix. This is =
+a test message that contains a very long line to see how well such mess=
+ages are handled by STUMP on Bunix. This is a test message that contain=
+s a very long line to see how well such messages are handled by STUMP o=
+n Bunix. This is a test message that contains a very long line to see h=
+ow well such messages are handled by STUMP on Bunix. This is a test mes=
+sage that contains a very long line to see how well such messages are h=
+andled by STUMP on Bunix. This is a test message that contains a very l=
+ong line to see how well such messages are handled by STUMP on Bunix. T=
+his is a test message that contains a very long line to see how well su=
+ch messages are handled by STUMP on Bunix. This is a test message that =
+contains a very long line to see how well such messages are handled by =
+STUMP on Bunix. This is a test message that contains a very long line t=
+o see how well such messages are handled by STUMP on Bunix. This is a t=
+est message that contains a very long line to see how well such message=
+s are handled by STUMP on Bunix.
+
+This is a test message that contains a very long line to see how well s=
+uch messages are handled by STUMP on Bunix. This is a test message that=
+ contains a very long line to see how well such *messages* are handled =
+by STUMP on Bunix. This is a test message that contains a very long lin=
+e to see how well such messages are handled by STUMP on Bunix. This is =
+a test message that contains a very long line to see how well such mess=
+ages are handled by STUMP on Bunix. This is a test message that contain=
+s a very long line to see how well such messages are handled by STUMP o=
+n Bunix. This is a test message that contains a very long line to see h=
+ow well such messages are handled by STUMP on Bunix. This is a test mes=
+sage that contains a very long line to see how well such messages are h=
+andled by STUMP on Bunix. This is a test message that contains a very l=
+ong line to see how well such messages are handled by STUMP on Bunix. T=
+his is a test message that contains a very long line to see how well su=
+ch messages are handled by STUMP on Bunix. This is a test message that =
+contains a very long line to see how well such messages are handled by =
+STUMP on Bunix. This is a test message that contains a very long line t=
+o see how well such messages are handled by STUMP on Bunix. This is a t=
+est message that contains a very long line to see how well such message=
+s are handled by STUMP on Bunix.

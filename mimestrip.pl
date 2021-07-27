@@ -34,7 +34,8 @@ use strict;
 
 use Mail::Message;
 use Text::Autoformat;
-use Mail::Message::Convert::HtmlFormatText;
+use lib './Mail-Message-3.011/lib';
+#use Mail::Message::Convert::HtmlFormatText;
 
 die "Usage: $0 < message\n"
     unless @ARGV==0;
@@ -68,10 +69,14 @@ if ( $msg->isMultipart ) {
     # Convert any HTML part to text, then remove the HTML part
     if ($part->contentType eq 'text/html') {
         rebuildMessage($msg);
-        $msg = $msg->rebuild(keep_message_id => 1,
-                             extra_rules => [ 'textAlternativeForHtml',
-                                              'removeHtmlAlternativeToText'
-                             ]);
+        $msg = $msg->rebuild(
+            keep_message_id => 1,
+            extra_rules => [
+                'textAlternativeForHtml',
+                'removeHtmlAlternativeToText',
+            ],
+            textAlternativeForHtml => { leftmargin => 0 },
+            );
     }
 
     rebuildMessage($msg);
@@ -79,8 +84,10 @@ if ( $msg->isMultipart ) {
 
 # Replace the message body with wrapped text
 my $wrapped_data = autoformat($msg->body->decoded, {all => 1});
-my $body = Mail::Message::Body->new(based_on => $msg->body,
-                                    data => $wrapped_data, message => $msg);
+my $body = Mail::Message::Body->new(
+    based_on => $msg->body,
+    data => $wrapped_data, message => $msg
+    );
 $msg->storeBody($body);
 
 print $msg->string();

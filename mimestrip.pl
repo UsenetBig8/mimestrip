@@ -69,9 +69,9 @@ if ( $msg->isMultipart ) {
     if ($part->contentType eq 'text/html') {
         rebuildMessage($msg);
         $msg = $msg->rebuild(keep_message_id => 1,
-                             extra_rules => [ 'textAlternativeForHtml' ]);
-        $msg = $msg->rebuild(keep_message_id => 1,
-                             extra_rules => [ 'removeHtmlAlternativeToText' ]);
+                             extra_rules => [ 'textAlternativeForHtml',
+                                              'removeHtmlAlternativeToText'
+                             ]);
     }
 
     rebuildMessage($msg);

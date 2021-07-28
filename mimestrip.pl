@@ -34,8 +34,7 @@ use strict;
 
 use Mail::Message;
 use Text::Autoformat;
-use lib './Mail-Message-3.011/lib';
-#use Mail::Message::Convert::HtmlFormatText;
+use Mail::Message::Convert::HtmlFormatText 3.011;
 
 die "Usage: $0 < message\n"
     unless @ARGV==0;

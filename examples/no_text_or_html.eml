@@ -1,0 +1,21 @@
+To: example@example.com
+From: Example Example <example@example.org>
+Subject: Test no HTML or text
+Message-ID: <no_text_or_html@example.org>
+Date: Mon, 26 Jul 2021 14:36:09 +0200
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101
+ Thunderbird/78.12.0
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="------------3551A768C7398070AF7348CA"
+Content-Language: en-CA
+
+This is a multi-part message in MIME format.
+--------------3551A768C7398070AF7348CA
+Content-Type: example/example; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+This is an example message that has neither a
+plain-text part nor an HTML part.
+
+--------------3551A768C7398070AF7348CA--

@@ -34,7 +34,7 @@ use strict;
 
 use Mail::Message;
 use Text::Autoformat;
-use Mail::Message::Convert::HtmlFormatText 3.011;
+use lib './Mail-Message-3.011/lib';
 
 die "Usage: $0 < message\n"
     unless @ARGV==0;
@@ -64,9 +64,9 @@ if ( $msg->isMultipart ) {
             $p->delete;
         }
     }
-
+    
     # Convert any HTML part to text, then remove the HTML part
-    if ($part->contentType eq 'text/html') {
+    if (defined $part && $part->contentType eq 'text/html') {
         rebuildMessage($msg);
         $msg = $msg->rebuild(
             keep_message_id => 1,
@@ -85,7 +85,8 @@ if ( $msg->isMultipart ) {
 my $wrapped_data = autoformat($msg->body->decoded, {all => 1});
 my $body = Mail::Message::Body->new(
     based_on => $msg->body,
-    data => $wrapped_data, message => $msg
+    data => $wrapped_data,
+    message => $msg,
     );
 $msg->storeBody($body);
 

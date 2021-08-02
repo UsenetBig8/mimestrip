@@ -1,0 +1,61 @@
+From: Example Example <example@example.org>
+Subject: Test HTML one part
+Date: Mon, 2 Aug 2021 16:26:17 +0200
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101
+ Thunderbird/78.12.0
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Language: en-CA
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <p>This is a test message that contains a very long line to see how
+      well such messages are handled by STUMP on Bunix. This is a test
+      message that contains a very long line to see how well such <b>messages</b>
+      are handled by STUMP on Bunix. This is a test message that
+      contains a very long line to see how well such messages are
+      handled by STUMP on Bunix. This is a test message that contains a
+      very long line to see how well such messages are handled by STUMP
+      on Bunix. This is a test message that contains a very long line to
+      see how well such messages are handled by STUMP on Bunix. This is
+      a test message that contains a very long line to see how well such
+      messages are handled by STUMP on Bunix. This is a test message
+      that contains a very long line to see how well such messages are
+      handled by STUMP on Bunix. This is a test message that contains a
+      very long line to see how well such messages are handled by STUMP
+      on Bunix. This is a test message that contains a very long line to
+      see how well such messages are handled by STUMP on Bunix. This is
+      a test message that contains a very long line to see how well such
+      messages are handled by STUMP on Bunix. This is a test message
+      that contains a very long line to see how well such messages are
+      handled by STUMP on Bunix. This is a test message that contains a
+      very long line to see how well such messages are handled by STUMP
+      on Bunix.</p>
+    This is a test message that contains a very long line to see how
+    well such messages are handled by STUMP on Bunix. This is a test
+    message that contains a very long line to see how well such messages
+    are handled by STUMP on Bunix. This is a test message that contains
+    a very long line to see how well such messages are handled by <i>STUMP</i>
+    on Bunix. This is a test message that contains a very long line to
+    see how well such messages are handled by STUMP on Bunix. This is a
+    test message that contains a very long line to see how well such
+    messages are handled by STUMP on Bunix. This is a test message that
+    contains a very long line to see how well such messages are handled
+    by STUMP on Bunix. This is a test message that contains a very long
+    line to see how well such messages are handled by STUMP on Bunix.
+    This is a test message that contains a very long line to see how
+    well such messages are handled by STUMP on Bunix. This is a test
+    message that contains a very long line to see how well such messages
+    are handled by STUMP on Bunix. This is a test message that contains
+    a very long line to see how well such messages are handled by STUMP
+    on Bunix. This is a test message that contains a very long line to
+    see how well such messages are handled by STUMP on Bunix. This is a
+    test message that contains a very long line to see how well such
+    messages are handled by STUMP on Bunix.<br>
+    <br>
+  </body>
+</html>

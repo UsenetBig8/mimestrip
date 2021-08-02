@@ -64,22 +64,24 @@ if ( $msg->isMultipart ) {
             $p->delete;
         }
     }
-    
-    # Convert any HTML part to text, then remove the HTML part
-    if (defined $part && $part->contentType eq 'text/html') {
-        rebuildMessage($msg);
-        $msg = $msg->rebuild(
-            keep_message_id => 1,
-            extra_rules => [
-                'textAlternativeForHtml',
-                'removeHtmlAlternativeToText',
-            ],
-            textAlternativeForHtml => { leftmargin => 0 },
-            );
-    }
-
-    rebuildMessage($msg);
 }
+
+rebuildMessage($msg);
+$part = ($msg->parts)[0];
+
+# Convert any HTML to text, then remove any HTML part
+if ($part->contentType eq 'text/html') {
+    rebuildMessage($msg);
+    $msg = $msg->rebuild(
+        keep_message_id => 1,
+        extra_rules => [
+            'textAlternativeForHtml',
+            'removeHtmlAlternativeToText',
+        ],
+        textAlternativeForHtml => { leftmargin => 0 },
+        );
+}
+rebuildMessage($msg);
 
 # Replace the message body with wrapped text
 my $wrapped_data = autoformat($msg->body->decoded, {all => 1});
